@@ -453,3 +453,107 @@
         margin: 2.5rem 0;
     }
   }
+
+  /* projects */
+
+  .projects {
+    background: #131313;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10rem 0;
+  }
+
+  .projects h1 {
+    background-color: #ff8177;
+    background-image: linear-gradient(to right, #ff0844 0%, #ef643a 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+  }
+
+  .projects__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .projects__card {
+    margin: 10px;
+    height: 425px;
+    width: 300px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+    transition: 0.3s ease-in;
+  }
+
+  .projects__card:nth-child(2) {
+    background: #a8ff78;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+  .projects__card:nth-child(3) {
+    background: #fc4a1a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+  }
+
+  .projects__card h2 {
+    text-align: center;
+  }
+
+  .projects__card p {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 20px;
+
+  }
+
+  .projects__btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  .projects__card button {
+    color: #fff;
+    padding: 14px 24px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #131313;
+    font-size: 1rem;
+  }
+
+  .projects__card button:hover {
+    cursor: pointer;
+  }
+
+  .projects__card:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 1300px) {
+    .projects__wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .projects__wrapper {
+        grid-template-columns: 1fr;
+    }
+  }
