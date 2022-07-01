@@ -111,9 +111,7 @@
         <div class="footer__links">
           <div class="footer__link--wrapper">
             <div class="footer__link--items">
-              <h2><span><i class="fa-solid fa-arrow-down"></i></span> More About Me <span><i class="fa-solid fa-arrow-down"></i></span></h2>
-              <a href="/github">CV <span><i class="fa-solid fa-user-tie"></i></span></a> 
-              <a href="/">Contact Me <span><i class="fa-solid fa-message"></i></span></a>
+                        <button data-popup-open="popupID" class="contact_btn">Contact</button>
             </div>
           </div>
 
@@ -121,25 +119,47 @@
         <section class="social__media">
           <div class="social__media--wrap">
             <div class="footer__logo">
-              <a href="/" id="footer__logo">Aleksi Hasu</a>
+              <a href="/" id="footer__logo"></a>
             </div>
             <p class="website__rights">Aleksi Hasu 2022.</p>
             <div class="social__icons">
-              <a href="/" class="social__icon--link" target="_blank"
-                ><i class="fab fa-discord"></i
+              <a href="https://discordapp.com/users/Hasu#0256" class="social__icon--link" target="_blank"
+                ><i class="fab fa-discord" id="discord"></i
               ></a>
-              <a href="/" class="social__icon--link"
-                ><i class="fab fa-github-square"></i
+              <a href="https://github.com/hasub0b" class="social__icon--link" target="_blank"
+                ><i class="fab fa-github-square" id="githubsq"></i
               ></a>
-              <a href="/" class="social__icon--link"
-                ><i class="fab fa-youtube"></i
+              <a href="https://www.youtube.com/watch?v=JxS5E-kZc2s&ab_channel=NoCATNoLiFE2" class="social__icon--link" target="_blank"
+                ><i class="fab fa-youtube" id="youtube"></i
               ></a>
-              <a href="/" class="social__icon--link"
-                ><i class="fa-solid fa-at"></i></a>
+              <a href="mailto:hasu.aleksi@gmail.com" class="social__icon--link"
+                ><i class="fa-solid fa-at" id="email"></i></a>
             </div>
           </div>
         </section>
       </div>
+
+      <div class="popup" id="popupID">
+        <div class="popup__inner">
+          <div class="popup__container">
+            <div class="popup__close popup-close" data-popup-close>
+              <div class="svg-icon">&#10006;</div>
+            </div>
+            <div class="popup__content">
+              <!-- your content -->
+              <div class="form">
+                <h2>Contact me:</h2>
+                <ul>
+                  <li>Email : hasu.aleksi@gmail.com</li>
+                  <li>Phone : +358 440209200</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
      
 
     <script src="app.js"></script>
