@@ -70,9 +70,9 @@
         <h1>My Projects</h1>
         <div class="projects__wrapper">
             <div class="projects__card">
-                <h2>H2-1</h2>
-                <p>P1</p>
-                <div class="projects__btn"><button>Button</button></div>
+                <h2>hasu.info</h2>
+                <p>JavaScript, css, HTML5</p>
+                <div class="projects__btn"><button data-popup-open="project1ID" class="project1_btn">Button</button></div>
             </div>
             <div class="projects__card">
                 <h2>H2-2</h2>
@@ -99,7 +99,7 @@
                 <h1>My GitHub</h1>
                 <h2>Some of my projects are avaible on my GitHub</h2>
                 <p>Go check them out!</p>
-                <button class="main__btn"> <a href="https://github.com/hasub0b">GitHub</a></button>
+                <button class="main__btn"> <a href="https://github.com/hasub0b" target="_blank" rel="noopener noreferrer">GitHub</a></button>
             </div>
             <div class="main__img--container">
                 <div class="main__img--card" id="card-2"><i class="fab fa-github"></i></div>
@@ -142,6 +142,34 @@
         </section>
       </div>
 
+      <!--POP UPS-->
+
+      <!--PROJECT 1-->
+      <div class="popup" id="project1ID">
+        <div class="popup__inner">
+          <div class="popup__container">
+            <div class="popup__close popup-close" data-popup-close>
+              <div class="svg-icon">&#10006;</div>
+            </div>
+            <div class="popup__content">
+              <!-- Contact info -->
+              <div class="form">
+                <h2>You are looking at it right now.</h2>
+                <ul>
+                  <li>Building this website has given me experience in:</li>
+                    <ul>- JavaScript</ul>
+                    <ul>- CSS</ul>
+                    <ul>- HTML5</ul>
+                  <li>Source code can be found in my <a href="https://github.com/hasub0b" target="_blank" rel="noopener noreferrer">GitHub</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--CONTACT-->
       <div class="popup" id="popupID">
         <div class="popup__inner">
           <div class="popup__container">
